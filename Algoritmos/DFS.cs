@@ -13,14 +13,7 @@ namespace IA.Algoritmos
             
             while (borda.Count != 0)
             {
-                String bordaString = "";
-                foreach (Node<T> value in borda)
-                {
-                    bordaString += "-" + value.estado.valor;
-                }
-                
-                Console.WriteLine("\n" +bordaString);
-                
+              
                 Node<T> pai = borda.Pop();
                 if (pai.estado.valor.Equals(fim.estado.valor))
                 {
@@ -28,10 +21,10 @@ namespace IA.Algoritmos
                     return pai;
                 }
                 List<Estado<T>> sucessores = FuncaoSucessora<T>.getSucessores(pai.estado,mapa);
-                Shuffle(sucessores);
                 
                 if (sucessores != null)
                 {
+                    Shuffle(sucessores);
                     foreach (Estado<T> value in sucessores)
                     {
                         Node<T> noFilho = new Node<T>(value,pai);

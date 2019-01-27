@@ -1,14 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Base;
 using IA.Algoritmos;
-using IA.Problemas.Aspirador;
 
-namespace IA
+namespace IA.Problemas.Aspirador
 {
-    class Program
+    public class SolverAspirador
     {
-        static void Main(string[] args)
+        public static void solve()
         {
             DictionaryList<VariacaoLimpeza,Estado<VariacaoLimpeza>> mapa = new Mapa().getMapa();
             
@@ -34,12 +33,11 @@ namespace IA
 
             foreach (Node<VariacaoLimpeza> cidade in caminho)
             {
-                if(cidade.pai == null)
-                 Console.Write(cidade.estado.valor);
+                if (cidade.pai == null)
+                    Console.Write(cidade.estado.valor);
                 else
-                 Console.Write(" ---> {0}",cidade.estado.valor);
+                    Console.Write(" ---> {0}", cidade.estado.valor);
             }
-        
         }
     }
 }

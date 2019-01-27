@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085eb52-2e9c-43d6-9e4a-205e8d84e2e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Algoritmos/BFS.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algoritmos/DFS.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Base/DictionaryList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Base/Estado.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Base/FuncaoSucessora.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Base/Node.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IA.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IA.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Romenia/Mapa.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Romenia/NomeCidades.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problemas/Aspirador/Mapa.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problemas/Aspirador/PosicaoEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problemas/Aspirador/SolverAspirador.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problemas/Aspirador/VariacaoLimpeza.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problemas/Aspirador/VariacoesLimpezaEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problemas/Romenia/SolverRomenia.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IA/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algoritmos/DFS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Algoritmos/DFS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Romenia/Mapa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Problemas/Romenia/Mapa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Romenia/NomeCidades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Problemas/Romenia/NomeCidadesEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/IA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/IA.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/IA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/IA.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/IA.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/IA.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/IA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/IA.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/IA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/IA.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,111 +32,52 @@
         <entry file="file://$PROJECT_DIR$/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <caret line="40" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
               <folding>
-                <marker date="1548545275800" expanded="true" signature="6:59" ph="..." />
-                <marker date="1548545275800" expanded="true" signature="112:1251" ph="{...}" />
-                <marker date="1548545275800" expanded="true" signature="132:1249" ph="{...}" />
-                <marker date="1548545275800" expanded="true" signature="178:1243" ph="{...}" />
-                <marker date="1548545275800" expanded="true" signature="839:955" ph="{...}" />
-                <marker date="1548545275800" expanded="true" signature="1018:1224" ph="{...}" />
+                <marker date="1548553301286" expanded="true" signature="6:110" ph="..." />
+                <marker date="1548553301286" expanded="true" signature="124:1408" ph="{...}" />
+                <marker date="1548553301286" expanded="true" signature="144:1406" ph="{...}" />
+                <marker date="1548553301286" expanded="true" signature="190:1400" ph="{...}" />
+                <marker date="1548553301286" expanded="true" signature="996:1112" ph="{...}" />
+                <marker date="1548553301286" expanded="true" signature="1175:1381" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algoritmos/DFS.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding>
+                <marker date="1548554695477" expanded="false" signature="6:59" ph="..." />
+                <marker date="1548554695477" expanded="true" signature="84:1568" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="110:1566" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="217:1176" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="366:1089" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="501:630" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="783:1075" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="902:1057" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="1241:1560" ph="{...}" />
+                <marker date="1548554695477" expanded="true" signature="1356:1548" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algoritmos/DFS.cs">
+        <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/SolverAspirador.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="330">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
-                <marker date="1548546831459" expanded="true" signature="6:59" ph="..." />
-                <marker date="1548546831459" expanded="true" signature="84:1788" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="110:1786" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="217:1395" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="366:1308" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="470:567" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="761:890" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="1043:1294" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="1121:1276" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="1461:1780" ph="{...}" />
-                <marker date="1548546831459" expanded="true" signature="1576:1768" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algoritmos/BFS.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="35" selection-end-column="9" />
-              <folding>
-                <marker date="1548544578941" expanded="true" signature="6:59" ph="..." />
-                <marker date="1548544578941" expanded="true" signature="84:1125" ph="{...}" />
-                <marker date="1548544578941" expanded="true" signature="110:1123" ph="{...}" />
-                <marker date="1548544578941" expanded="true" signature="216:1117" ph="{...}" />
-                <marker date="1548544578941" expanded="true" signature="356:1030" ph="{...}" />
-                <marker date="1548544578941" expanded="true" signature="480:609" ph="{...}" />
-                <marker date="1548544578941" expanded="true" signature="762:1016" ph="{...}" />
-                <marker date="1548544578941" expanded="true" signature="840:998" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Base/DictionaryList.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding>
-                <marker date="1548533276160" expanded="true" signature="49:135" ph="{...}" />
-                <marker date="1548533276160" expanded="true" signature="112:133" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Romenia/Mapa.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="101" column="92" selection-start-line="101" selection-start-column="92" selection-end-line="101" selection-end-column="92" />
-              <folding>
-                <marker date="1548544228303" expanded="true" signature="6:59" ph="..." />
-                <marker date="1548544228303" expanded="true" signature="81:7072" ph="{...}" />
-                <marker date="1548544228303" expanded="true" signature="105:7070" ph="{...}" />
-                <marker date="1548544228303" expanded="true" signature="211:6936" ph="{...}" />
-                <marker date="1548544228303" expanded="true" signature="7019:7064" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Romenia/NomeCidades.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <marker date="1548541912706" expanded="true" signature="20:404" ph="{...}" />
-                <marker date="1548541912706" expanded="true" signature="54:402" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Base/Estado.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <marker date="1548532584980" expanded="true" signature="14:166" ph="{...}" />
-                <marker date="1548532584980" expanded="true" signature="44:164" ph="{...}" />
-                <marker date="1548532584980" expanded="true" signature="106:158" ph="{...}" />
+                <marker date="1548554915250" expanded="true" signature="6:80" ph="..." />
+                <marker date="1548554915250" expanded="true" signature="114:1407" ph="{...}" />
+                <marker date="1548554915250" expanded="true" signature="149:1405" ph="{...}" />
+                <marker date="1548554915250" expanded="true" signature="190:1399" ph="{...}" />
+                <marker date="1548554915250" expanded="true" signature="996:1112" ph="{...}" />
+                <marker date="1548554915250" expanded="true" signature="1175:1389" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -139,12 +86,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Base/FuncaoSucessora.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
-                <marker date="1548536632125" expanded="true" signature="49:385" ph="{...}" />
-                <marker date="1548536632125" expanded="true" signature="87:383" ph="{...}" />
-                <marker date="1548536632125" expanded="true" signature="198:377" ph="{...}" />
+                <marker date="1548553101809" expanded="true" signature="49:385" ph="{...}" />
+                <marker date="1548553101809" expanded="true" signature="87:383" ph="{...}" />
+                <marker date="1548553101809" expanded="true" signature="198:377" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Problemas/Romenia/SolverRomenia.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="24" />
+              <folding>
+                <marker date="1548548817111" expanded="true" signature="6:108" ph="..." />
+                <marker date="1548548817111" expanded="true" signature="122:1255" ph="{...}" />
+                <marker date="1548548817111" expanded="true" signature="148:1253" ph="{...}" />
+                <marker date="1548548817111" expanded="true" signature="182:1247" ph="{...}" />
+                <marker date="1548548817111" expanded="true" signature="843:959" ph="{...}" />
+                <marker date="1548548817111" expanded="true" signature="1022:1228" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -153,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Base/Node.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            <state relative-caret-position="645">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding>
                 <marker date="1548546463452" expanded="true" signature="14:1038" ph="{...}" />
                 <marker date="1548546463452" expanded="true" signature="41:1036" ph="{...}" />
@@ -167,35 +131,114 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/Mapa.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+              <folding>
+                <marker date="1548553176261" expanded="true" signature="6:45" ph="..." />
+                <marker date="1548553176261" expanded="true" signature="79:4344" ph="{...}" />
+                <marker date="1548553176261" expanded="true" signature="103:4342" ph="{...}" />
+                <marker date="1548553176261" expanded="true" signature="209:4204" ph="{...}" />
+                <marker date="1548553176261" expanded="true" signature="4286:4336" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Base/DictionaryList.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+              <folding>
+                <marker date="1548533276160" expanded="true" signature="49:135" ph="{...}" />
+                <marker date="1548533276160" expanded="true" signature="112:133" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/VariacaoLimpeza.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <marker date="1548554642105" expanded="true" signature="47:1297" ph="{...}" />
+                <marker date="1548554642105" expanded="true" signature="82:1295" ph="{...}" />
+                <marker date="1548554642105" expanded="true" signature="296:446" ph="{...}" />
+                <marker date="1548554642105" expanded="true" signature="507:727" ph="{...}" />
+                <marker date="1548554642105" expanded="true" signature="776:847" ph="{...}" />
+                <marker date="1548554642105" expanded="true" signature="890:1125" ph="{...}" />
+                <marker date="1548554642105" expanded="true" signature="1168:1289" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Problemas/Romenia/Mapa.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="33" selection-start-line="11" selection-end-line="12" />
+              <folding>
+                <marker date="1548548817119" expanded="true" signature="6:45" ph="..." />
+                <marker date="1548548817119" expanded="true" signature="77:7068" ph="{...}" />
+                <marker date="1548548817119" expanded="true" signature="101:7066" ph="{...}" />
+                <marker date="1548548817119" expanded="true" signature="207:6932" ph="{...}" />
+                <marker date="1548548817119" expanded="true" signature="7015:7060" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Problemas/Romenia/Mapa.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Romenia/SolverRomenia.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F313389-7900-4F7A-BB2F-B2E504C2B4B6/e8/b26aa1c7/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Aspirador/VariacoesLimpezaEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Aspirador/VariacaoLimpeza.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Algoritmos/BFS.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Romenia/NomeCidades.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Romenia/Mapa.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Aspirador/PosicaoEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Romenia/NomeCidadesEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Base/DictionaryList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Algoritmos/DFS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Base/Estado.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Base/FuncaoSucessora.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Aspirador/Mapa.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Base/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F313389-7900-4F7A-BB2F-B2E504C2B4B6/e8/b26aa1c7/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Problemas/Aspirador/SolverAspirador.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Base/Estado.cs" />
-        <option value="$PROJECT_DIR$/Base/DictionaryList.cs" />
-        <option value="$PROJECT_DIR$/Base/FuncaoSucessora.cs" />
         <option value="$PROJECT_DIR$/Romenia/NomeCidades.cs" />
         <option value="$PROJECT_DIR$/Romenia/Mapa.cs" />
         <option value="$PROJECT_DIR$/Algoritmos/BFS.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/Base/Node.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Romenia/Mapa.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Romenia/SolverRomenia.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Romenia/NomeCidades.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Romenia/NomeCidadesEnum.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Aspirador/VariacoesLimpezaEnum.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Aspirador/PosicaoEnum.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Aspirador/LimpezaEnum.cs" />
+        <option value="$PROJECT_DIR$/Base/FuncaoSucessora.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Aspirador/Mapa.cs" />
+        <option value="$PROJECT_DIR$/Base/DictionaryList.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Aspirador/VariacaoLimpeza.cs" />
         <option value="$PROJECT_DIR$/Algoritmos/DFS.cs" />
+        <option value="$PROJECT_DIR$/Problemas/Aspirador/SolverAspirador.cs" />
       </list>
     </option>
   </component>
@@ -239,6 +282,20 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="IA" type="24d0babc:SolutionExplorerModelNode" />
               <item name="IA" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Problemas" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="IA" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="IA" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Problemas" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Aspirador" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="IA" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="IA" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Problemas" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Romenia" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
@@ -304,12 +361,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548532403576</updated>
-      <workItem from="1548532405483" duration="13011000" />
+      <workItem from="1548532405483" duration="20453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13011000" />
+    <option name="totallyTimeSpent" value="20453000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,7 +384,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2219697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31969696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" />
@@ -339,8 +396,8 @@
       <window_info anchor="bottom" id="Build" weight="0.32928944" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32928944" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3986135" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32928944" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986135" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -390,75 +447,14 @@
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Algoritmos/DFS.cs</url>
-          <line>15</line>
-          <properties documentPath="$PROJECT_DIR$/Algoritmos/DFS.cs" initialLine="15">
-            <startOffsets>
-              <option value="397" />
-            </startOffsets>
-            <endOffsets>
-              <option value="421" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Base/DictionaryList.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1548533276160" expanded="true" signature="49:135" ph="{...}" />
-            <marker date="1548533276160" expanded="true" signature="112:133" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F313389-7900-4F7A-BB2F-B2E504C2B4B6/e8/b26aa1c7/ThrowHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Romenia/Mapa.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="101" column="92" selection-start-line="101" selection-start-column="92" selection-end-line="101" selection-end-column="92" />
-          <folding>
-            <marker date="1548544228303" expanded="true" signature="6:59" ph="..." />
-            <marker date="1548544228303" expanded="true" signature="81:7072" ph="{...}" />
-            <marker date="1548544228303" expanded="true" signature="105:7070" ph="{...}" />
-            <marker date="1548544228303" expanded="true" signature="211:6936" ph="{...}" />
-            <marker date="1548544228303" expanded="true" signature="7019:7064" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Base/Estado.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <marker date="1548532584980" expanded="true" signature="14:166" ph="{...}" />
-            <marker date="1548532584980" expanded="true" signature="44:164" ph="{...}" />
-            <marker date="1548532584980" expanded="true" signature="106:158" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Romenia/NomeCidades.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <marker date="1548541912706" expanded="true" signature="20:404" ph="{...}" />
-            <marker date="1548541912706" expanded="true" signature="54:402" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,25 +475,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Program.cs">
+    <entry file="file://$PROJECT_DIR$/Base/Estado.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <marker date="1548545275800" expanded="true" signature="6:59" ph="..." />
-            <marker date="1548545275800" expanded="true" signature="112:1251" ph="{...}" />
-            <marker date="1548545275800" expanded="true" signature="132:1249" ph="{...}" />
-            <marker date="1548545275800" expanded="true" signature="178:1243" ph="{...}" />
-            <marker date="1548545275800" expanded="true" signature="839:955" ph="{...}" />
-            <marker date="1548545275800" expanded="true" signature="1018:1224" ph="{...}" />
+            <marker date="1548532584980" expanded="true" signature="14:166" ph="{...}" />
+            <marker date="1548532584980" expanded="true" signature="44:164" ph="{...}" />
+            <marker date="1548532584980" expanded="true" signature="106:158" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Romenia/NomeCidadesEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <marker date="1548548817099" expanded="true" signature="30:414" ph="{...}" />
+            <marker date="1548548817099" expanded="true" signature="64:412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/PosicaoEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <marker date="1548549454374" expanded="true" signature="32:110" ph="{...}" />
+            <marker date="1548549454374" expanded="true" signature="62:108" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/LimpezaEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/VariacoesLimpezaEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1548549327569" expanded="true" signature="32:418" ph="{...}" />
+            <marker date="1548549327569" expanded="true" signature="177:416" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Romenia/Mapa.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="33" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <marker date="1548548817119" expanded="true" signature="6:45" ph="..." />
+            <marker date="1548548817119" expanded="true" signature="77:7068" ph="{...}" />
+            <marker date="1548548817119" expanded="true" signature="101:7066" ph="{...}" />
+            <marker date="1548548817119" expanded="true" signature="207:6932" ph="{...}" />
+            <marker date="1548548817119" expanded="true" signature="7015:7060" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Base/Node.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        <state relative-caret-position="645">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding>
             <marker date="1548546463452" expanded="true" signature="14:1038" ph="{...}" />
             <marker date="1548546463452" expanded="true" signature="41:1036" ph="{...}" />
@@ -509,34 +556,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/Mapa.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+          <folding>
+            <marker date="1548553176261" expanded="true" signature="6:45" ph="..." />
+            <marker date="1548553176261" expanded="true" signature="79:4344" ph="{...}" />
+            <marker date="1548553176261" expanded="true" signature="103:4342" ph="{...}" />
+            <marker date="1548553176261" expanded="true" signature="209:4204" ph="{...}" />
+            <marker date="1548553176261" expanded="true" signature="4286:4336" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Base/DictionaryList.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding>
+            <marker date="1548533276160" expanded="true" signature="49:135" ph="{...}" />
+            <marker date="1548533276160" expanded="true" signature="112:133" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Base/FuncaoSucessora.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
-            <marker date="1548536632125" expanded="true" signature="49:385" ph="{...}" />
-            <marker date="1548536632125" expanded="true" signature="87:383" ph="{...}" />
-            <marker date="1548536632125" expanded="true" signature="198:377" ph="{...}" />
+            <marker date="1548553101809" expanded="true" signature="49:385" ph="{...}" />
+            <marker date="1548553101809" expanded="true" signature="87:383" ph="{...}" />
+            <marker date="1548553101809" expanded="true" signature="198:377" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/VariacaoLimpeza.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <marker date="1548554642105" expanded="true" signature="47:1297" ph="{...}" />
+            <marker date="1548554642105" expanded="true" signature="82:1295" ph="{...}" />
+            <marker date="1548554642105" expanded="true" signature="296:446" ph="{...}" />
+            <marker date="1548554642105" expanded="true" signature="507:727" ph="{...}" />
+            <marker date="1548554642105" expanded="true" signature="776:847" ph="{...}" />
+            <marker date="1548554642105" expanded="true" signature="890:1125" ph="{...}" />
+            <marker date="1548554642105" expanded="true" signature="1168:1289" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Algoritmos/DFS.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="195">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <marker date="1548546831459" expanded="true" signature="6:59" ph="..." />
-            <marker date="1548546831459" expanded="true" signature="84:1788" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="110:1786" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="217:1395" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="366:1308" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="470:567" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="761:890" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="1043:1294" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="1121:1276" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="1461:1780" ph="{...}" />
-            <marker date="1548546831459" expanded="true" signature="1576:1768" ph="{...}" />
+            <marker date="1548554695477" expanded="false" signature="6:59" ph="..." />
+            <marker date="1548554695477" expanded="true" signature="84:1568" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="110:1566" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="217:1176" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="366:1089" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="501:630" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="783:1075" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="902:1057" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="1241:1560" ph="{...}" />
+            <marker date="1548554695477" expanded="true" signature="1356:1548" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <marker date="1548553301286" expanded="true" signature="6:110" ph="..." />
+            <marker date="1548553301286" expanded="true" signature="124:1408" ph="{...}" />
+            <marker date="1548553301286" expanded="true" signature="144:1406" ph="{...}" />
+            <marker date="1548553301286" expanded="true" signature="190:1400" ph="{...}" />
+            <marker date="1548553301286" expanded="true" signature="996:1112" ph="{...}" />
+            <marker date="1548553301286" expanded="true" signature="1175:1381" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Romenia/SolverRomenia.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <marker date="1548548817111" expanded="true" signature="6:108" ph="..." />
+            <marker date="1548548817111" expanded="true" signature="122:1255" ph="{...}" />
+            <marker date="1548548817111" expanded="true" signature="148:1253" ph="{...}" />
+            <marker date="1548548817111" expanded="true" signature="182:1247" ph="{...}" />
+            <marker date="1548548817111" expanded="true" signature="843:959" ph="{...}" />
+            <marker date="1548548817111" expanded="true" signature="1022:1228" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problemas/Aspirador/SolverAspirador.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <marker date="1548554915250" expanded="true" signature="6:80" ph="..." />
+            <marker date="1548554915250" expanded="true" signature="114:1407" ph="{...}" />
+            <marker date="1548554915250" expanded="true" signature="149:1405" ph="{...}" />
+            <marker date="1548554915250" expanded="true" signature="190:1399" ph="{...}" />
+            <marker date="1548554915250" expanded="true" signature="996:1112" ph="{...}" />
+            <marker date="1548554915250" expanded="true" signature="1175:1389" ph="{...}" />
           </folding>
         </state>
       </provider>

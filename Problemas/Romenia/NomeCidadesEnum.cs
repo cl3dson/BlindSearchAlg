@@ -1,4 +1,4 @@
-namespace IA.Romenia
+namespace IA.Problemas.Romenia
 {
     public enum NomeCidadesEnum
     {
