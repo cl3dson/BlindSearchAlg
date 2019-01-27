@@ -1,0 +1,11 @@
+/home/cl3dson/RiderProjects/IA/bin/Debug/netcoreapp2.2/IA.deps.json
+/home/cl3dson/RiderProjects/IA/bin/Debug/netcoreapp2.2/IA.runtimeconfig.json
+/home/cl3dson/RiderProjects/IA/bin/Debug/netcoreapp2.2/IA.runtimeconfig.dev.json
+/home/cl3dson/RiderProjects/IA/bin/Debug/netcoreapp2.2/IA.dll
+/home/cl3dson/RiderProjects/IA/bin/Debug/netcoreapp2.2/IA.pdb
+/home/cl3dson/RiderProjects/IA/obj/Debug/netcoreapp2.2/IA.csprojAssemblyReference.cache
+/home/cl3dson/RiderProjects/IA/obj/Debug/netcoreapp2.2/IA.csproj.CoreCompileInputs.cache
+/home/cl3dson/RiderProjects/IA/obj/Debug/netcoreapp2.2/IA.AssemblyInfoInputs.cache
+/home/cl3dson/RiderProjects/IA/obj/Debug/netcoreapp2.2/IA.AssemblyInfo.cs
+/home/cl3dson/RiderProjects/IA/obj/Debug/netcoreapp2.2/IA.dll
+/home/cl3dson/RiderProjects/IA/obj/Debug/netcoreapp2.2/IA.pdb
