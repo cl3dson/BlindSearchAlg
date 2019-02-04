@@ -4,9 +4,16 @@ using Base;
 
 namespace IA.Algoritmos
 {
-    public class BFS<T>
+    public class BFS<T> : AbstractAlgoritmo<T>
     {
-        public static Node<T> solver(Node<T> inicio, Node<T> fim, DictionaryList<T,Estado<T>> mapa)
+
+        public BFS(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa):
+            base(inicio,objetivo,mapa)
+        {
+            
+        }
+        
+       public override Node<T> solve()
         {
             Queue<Node<T>> borda = new Queue<Node<T>>();
             borda.Enqueue(inicio);
@@ -14,7 +21,7 @@ namespace IA.Algoritmos
             while (borda.Count != 0)
             {
                 Node<T> pai = borda.Dequeue();
-                if (pai.estado.valor.Equals(fim.estado.valor))
+                if (pai.estado.Equals(objetivo.estado))
                 {
                     Console.WriteLine("Objetivo alcançado");
                     return pai;
@@ -32,7 +39,6 @@ namespace IA.Algoritmos
             }
             
             throw new Exception("Nao há solucao");
-            
         }
     }
 }

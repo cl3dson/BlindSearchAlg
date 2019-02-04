@@ -5,9 +5,12 @@
     <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_IA.-732319312.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Algoritmos" t="Include">
+        <e p="AbstractAlgoritmo.cs" t="Include" />
         <e p="BFS.cs" t="Include" />
         <e p="DFS.cs" t="Include" />
+        <e p="DFSLimitado.cs" t="Include" />
         <e p="DFSVisitados.cs" t="Include" />
+        <e p="IAlgoritmo.cs" t="Include" />
       </e>
       <e p="Base" t="Include">
         <e p="DictionaryList.cs" t="Include" />
@@ -19,6 +22,7 @@
       <e p="IA.csproj" t="IncludeRecursive" />
       <e p="IA.sln" t="IncludeFlat" />
       <e p="Problemas" t="Include">
+        <e p="AbstractSolver.cs" t="Include" />
         <e p="Aspirador" t="Include">
           <e p="Mapa.cs" t="Include" />
           <e p="PosicaoEnum.cs" t="Include" />

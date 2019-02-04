@@ -7,35 +7,26 @@ using IA.Problemas.Romenia;
 
 namespace IA
 {
-    class SolverRomenia : ISolver
+    class SolverRomenia  : AbstractSolver<NomeCidadesEnum>, ISolver
     {
+
+        private DictionaryList<NomeCidadesEnum, Estado<NomeCidadesEnum>> mapa;
+        private Node<NomeCidadesEnum> inicio;
+        private Node<NomeCidadesEnum> objetivo;
+        
+        public SolverRomenia()
+        {
+            mapa = new Mapa().GetMapa();
+            inicio = new Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.NEAMT));
+            objetivo = new  Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.BUCHAREST));
+
+        }
+        
         void ISolver.solve()
         {
-            Console.Clear();
-            DictionaryList<NomeCidadesEnum,Estado<NomeCidadesEnum>> mapa = new Mapa().GetMapa();
-            
-            Node<NomeCidadesEnum> estadoInicial = new Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.NEAMT));
-            Node<NomeCidadesEnum> estadoFinal= new  Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.BUCHAREST));
-
-            Node<NomeCidadesEnum> resultado = DFSVisitados<NomeCidadesEnum>.solver(estadoInicial, estadoFinal, mapa);
-            Stack<Node<NomeCidadesEnum>> caminho = new Stack<Node<NomeCidadesEnum>>();    
-            
-            caminho.Push(resultado);
-
-            while (resultado.pai != null)
-            {
-                caminho.Push(resultado.pai);
-                resultado = resultado.pai;
-            }
-
-            foreach (Node<NomeCidadesEnum> cidade in caminho)
-            {
-                if(cidade.pai == null)
-                 Console.Write(cidade.estado.valor);
-                else
-                 Console.Write(" ---> {0}",cidade.estado.valor);
-            }
-        
+            EscolherAlgoritmo(inicio,objetivo,mapa);
+            Node<NomeCidadesEnum> resultado = algoritmoStrategy.solve();
+            imprimirResultado(resultado);       
         }
     }
 }

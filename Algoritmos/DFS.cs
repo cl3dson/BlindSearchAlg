@@ -4,9 +4,16 @@ using Base;
 
 namespace IA.Algoritmos
 {
-    public class DFS<T>
+    public class DFS<T> : AbstractAlgoritmo<T>
     {
-        public static Node<T> solver(Node<T> inicio, Node<T> fim, DictionaryList<T, Estado<T>> mapa)
+        
+        public DFS(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa):
+            base(inicio,objetivo,mapa)
+        {
+            
+        }
+        
+        public override Node<T> solve()
         {
             Stack<Node<T>> borda = new Stack<Node<T>>();
             borda.Push(inicio);
@@ -15,7 +22,7 @@ namespace IA.Algoritmos
             {
               
                 Node<T> pai = borda.Pop();
-                if (pai.estado.valor.Equals(fim.estado.valor))
+                if (pai.estado.valor.Equals(objetivo.estado.valor))
                 {
                     Console.WriteLine("Objetivo alcançado");
                     return pai;
@@ -32,13 +39,11 @@ namespace IA.Algoritmos
                     }
                 }
             }
-            
             throw new Exception("Nao há solucao");
-            
         }
         
 
-        public static void Shuffle<T>(IList<T> list)  
+       private void Shuffle<T>(IList<T> list)  
         {  
             Random rng = new Random();  
 
