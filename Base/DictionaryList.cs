@@ -6,4 +6,9 @@ namespace Base
     {
         
     }
+    
+    public class DictionaryDictionary<K,T,L> : Dictionary<K,Dictionary<T,L>>
+    {
+        
+    }
 }

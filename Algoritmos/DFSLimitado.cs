@@ -6,20 +6,28 @@ namespace IA.Algoritmos
 {
     public class DFSLimitado<T> : AbstractAlgoritmo<T>
     {
+     
+        private int profundidadeMaxima;
         
-        public DFSLimitado(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa):
+        public DFSLimitado(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa,int profundidadeMaxima):
             base(inicio,objetivo,mapa)
         {
+            this.profundidadeMaxima = profundidadeMaxima;
+        }
+
+        public void setProfundidadeMaxima(int numero)
+        {
+            profundidadeMaxima = numero;
+        }
+
+        public int getProfundidadeMaxima()
+        {
+            return profundidadeMaxima;
         }
         
         public override Node<T> solve()
         {
-            Console.Clear();
-            int profundidadeMaxima;
-            Console.WriteLine("informe a profundidade maxima:");
-            profundidadeMaxima = Int32.Parse(Console.ReadLine());
-            Console.Clear();
-
+            
             Stack<Node<T>> borda = new Stack<Node<T>>();
             borda.Push(inicio);
             
@@ -33,18 +41,17 @@ namespace IA.Algoritmos
                     return pai;
                 }
                 
-                List<Estado<T>> sucessores = FuncaoSucessora<T>.getSucessores(pai.estado,mapa);
+                List<Node<T>> sucessores = FuncaoSucessora<T>.getSucessores(pai,mapa,distancias);
                 
                 if (getProfunidadeNode(pai) < profundidadeMaxima && sucessores != null)
                 {
-                    foreach (Estado<T> value in sucessores)
+                    foreach (Node<T> sucessor in sucessores)
                     {
-                        Node<T> noFilho = new Node<T>(value,pai);
-                        borda.Push(noFilho);
+                        borda.Push(sucessor);
                     }
                 }
             }
-            throw new Exception("Nao há solucao");
+            throw new SemSolucaoException();
         }
 
 

@@ -4,11 +4,11 @@ using Base;
 
 namespace IA.Algoritmos
 {
-    public class BFS<T> : AbstractAlgoritmo<T>
+    public class CustoUniforme<T> : AbstractAlgoritmo<T>
     {
 
-        public BFS(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa):
-            base(inicio,objetivo,mapa)
+        public CustoUniforme(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa,Dictionary<T,Dictionary<T,int>> distancias):
+            base(inicio,objetivo,mapa,distancias)
         {
             
         }
@@ -27,6 +27,7 @@ namespace IA.Algoritmos
                     return pai;
                 }
                 List<Node<T>> sucessores = FuncaoSucessora<T>.getSucessores(pai,mapa,distancias);
+                sucessores = ordenarPorCusto(sucessores);
                 
                 if (sucessores != null)
                 {
@@ -39,5 +40,11 @@ namespace IA.Algoritmos
             
             throw new SemSolucaoException();
         }
+
+       private List<Node<T>> ordenarPorCusto(List<Node<T>> sucessores)
+       {
+           sucessores.Sort((x,y) => x.custoAteRaiz().CompareTo(y.custoAteRaiz()));
+           return sucessores;
+       }
     }
 }

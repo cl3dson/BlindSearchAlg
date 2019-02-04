@@ -9,7 +9,7 @@ namespace IA.Problemas
     {
         protected AbstractAlgoritmo<T> algoritmoStrategy;
 
-        protected void EscolherAlgoritmo(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa)
+        protected void EscolherAlgoritmo(Node<T> inicio, Node<T> objetivo, DictionaryList<T, Estado<T>> mapa,Dictionary<T,Dictionary<T,int>> distancias = null,Dictionary<T,Dictionary<T,int>> distanciasLinhaReta = null)
         {
             Console.Clear();
             String problem;
@@ -17,6 +17,13 @@ namespace IA.Problemas
             Console.WriteLine("1 ------------------- BFS");
             Console.WriteLine("2 ------------------- DFS");
             Console.WriteLine("3 ------------------- DFS com visitados");
+            Console.WriteLine("4 ------------------- DFS com profundidade limitada");
+            Console.WriteLine("5 ------------------- DFS iterativo");
+            Console.WriteLine("6 ------------------- DFS custo uniforme");
+            Console.WriteLine("7 ------------------- busca gulosa");
+
+
+
             problem = Console.ReadLine();
             Console.Clear();
             
@@ -32,7 +39,18 @@ namespace IA.Problemas
                     algoritmoStrategy = new DFSVisitados<T>(inicio,objetivo,mapa);
                     break;
                 case "4":
-                    algoritmoStrategy = new DFSLimitado<T>(inicio,objetivo,mapa);
+                    Console.WriteLine("informe a profundidade maxima:");
+                    int profundidadeMaxima = Int32.Parse(Console.ReadLine());
+                    algoritmoStrategy = new DFSLimitado<T>(inicio,objetivo,mapa,profundidadeMaxima);
+                    break;
+                case "5":
+                    algoritmoStrategy = new DFSIterativo<T>(inicio,objetivo,mapa);
+                    break;
+                case "6":
+                    algoritmoStrategy = new CustoUniforme<T>(inicio,objetivo,mapa,distancias);
+                    break;
+                case "7":
+                    algoritmoStrategy = new BuscaGulosa<T>(inicio,objetivo,mapa,distanciasLinhaReta);
                     break;
             }
         }

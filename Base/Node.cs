@@ -37,9 +37,25 @@ namespace Base
             this.custo = custo;
             this.pai = pai;
             if (pai == null)
+            {
                 profundidade = 0;
+                this.custo = 0;
+            }
             else
                 profundidade = pai.profundidade++;
+        }
+
+        public int custoAteRaiz()
+        {
+            int custo = 0;
+            Node<T> paiAtual = this.pai;
+            while (paiAtual != null)
+            {
+                custo += paiAtual.custo;
+                paiAtual = paiAtual.pai;
+            }
+
+            return custo;
         }
         
         

@@ -13,18 +13,22 @@ namespace IA
         private DictionaryList<NomeCidadesEnum, Estado<NomeCidadesEnum>> mapa;
         private Node<NomeCidadesEnum> inicio;
         private Node<NomeCidadesEnum> objetivo;
+        private DictionaryDictionary<NomeCidadesEnum, NomeCidadesEnum, int> distancias;
+        private DictionaryDictionary<NomeCidadesEnum, NomeCidadesEnum, int> distanciasLinhaReta;
+
         
         public SolverRomenia()
         {
             mapa = new Mapa().GetMapa();
-            inicio = new Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.NEAMT));
+            distancias = new Mapa().GetDistancias();
+            distanciasLinhaReta = new Mapa().GetDistanciasLinhaReta();
+            inicio = new Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.ORADEIA));
             objetivo = new  Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.BUCHAREST));
-
         }
         
         void ISolver.solve()
         {
-            EscolherAlgoritmo(inicio,objetivo,mapa);
+            EscolherAlgoritmo(inicio,objetivo,mapa,distancias,distanciasLinhaReta);
             Node<NomeCidadesEnum> resultado = algoritmoStrategy.solve();
             imprimirResultado(resultado);       
         }

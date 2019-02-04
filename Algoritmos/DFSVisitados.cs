@@ -28,20 +28,19 @@ namespace IA.Algoritmos
                     Console.WriteLine("Objetivo alcançado");
                     return pai;
                 }
-                List<Estado<T>> sucessores = FuncaoSucessoraVisitados<T>.getSucessores(pai.estado,mapa,visitados);
+                List<Node<T>> sucessores = FuncaoSucessoraVisitados<T>.getSucessores(pai,mapa,visitados);
                 visitados.Add(pai.estado);
                 
                 if (sucessores != null)
                 {
-                    foreach (Estado<T> value in sucessores)
+                    foreach (Node<T> sucessor in sucessores)
                     {
-                        Node<T> noFilho = new Node<T>(value,pai);
-                        borda.Push(noFilho);   
+                        borda.Push(sucessor);   
                     }
                 }
             }
             
-            throw new Exception("Nao há solucao");
+            throw new SemSolucaoException();
             
         }
     }

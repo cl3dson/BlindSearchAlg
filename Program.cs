@@ -28,8 +28,15 @@ namespace IA
                    solverStrategy = new SolverRomenia();
                    break;
             }
-            
-            solverStrategy.solve();
+
+            try
+            {
+                solverStrategy.solve();
+            }
+            catch (SemSolucaoException e)
+            {
+                Console.WriteLine("nao há solucoes");
+            }
         }
     }
 }
