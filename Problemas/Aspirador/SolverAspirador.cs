@@ -1,14 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Base;
 using IA.Algoritmos;
 
 namespace IA.Problemas.Aspirador
 {
-    public class SolverAspirador
+    public class SolverAspirador : ISolver
     {
-        public static void solve()
+        void ISolver.solve()
         {
+            Console.Clear();
             DictionaryList<VariacaoLimpeza,Estado<VariacaoLimpeza>> mapa = new Mapa().getMapa();
             
             Node<VariacaoLimpeza> inicio =

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Base;
 using IA.Algoritmos;
+using IA.Problemas;
 using IA.Problemas.Aspirador;
 
 namespace IA
@@ -10,36 +12,24 @@ namespace IA
     {
         static void Main(string[] args)
         {
-            DictionaryList<VariacaoLimpeza,Estado<VariacaoLimpeza>> mapa = new Mapa().getMapa();
-            
-            Node<VariacaoLimpeza> inicio =
-                new Node<VariacaoLimpeza>(
-                    new Estado<VariacaoLimpeza>(new VariacaoLimpeza(PosicaoEnum.ESQUERDA, false, false)));
-            
-            Node<VariacaoLimpeza> fim =
-                new Node<VariacaoLimpeza>(
-                    new Estado<VariacaoLimpeza>(new VariacaoLimpeza(PosicaoEnum.ESQUERDA, true, true)));
+            ISolver solverStrategy = new SolverAspirador();
+            String problem;
+            Console.WriteLine("escolha um problema:");
+            Console.WriteLine("1 ------------------- aspirador");
+            Console.WriteLine("2 ------------------- romenia");
+            problem = Console.ReadLine();
 
-            
-            Node<VariacaoLimpeza> resultado = DFS<VariacaoLimpeza>.solver(inicio, fim, mapa);
-            
-            Stack<Node<VariacaoLimpeza>> caminho = new Stack<Node<VariacaoLimpeza>>();    
-            caminho.Push(resultado);
-
-            while (resultado.pai != null)
+            switch (problem)
             {
-                caminho.Push(resultado.pai);
-                resultado = resultado.pai;
+                case "1":
+                   solverStrategy = new SolverAspirador();
+                   break;
+                case "2":
+                   solverStrategy = new SolverRomenia();
+                   break;
             }
-
-            foreach (Node<VariacaoLimpeza> cidade in caminho)
-            {
-                if(cidade.pai == null)
-                 Console.Write(cidade.estado.valor);
-                else
-                 Console.Write(" ---> {0}",cidade.estado.valor);
-            }
-        
+            
+            solverStrategy.solve();
         }
     }
 }

@@ -1,6 +1,8 @@
+using System;
+
 namespace Base
 {
-    public class Estado <T>
+    public class Estado <T> : IEquatable<Estado<T>>
     {
         public T valor;
 
@@ -8,5 +10,11 @@ namespace Base
         {
             this.valor = valor;
         }
+
+        public bool Equals(Estado<T> other)
+        {
+            return valor.Equals(other.valor);
+        }
+        
     }
 }

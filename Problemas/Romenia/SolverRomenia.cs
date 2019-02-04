@@ -2,21 +2,24 @@
 using System.Collections.Generic;
 using Base;
 using IA.Algoritmos;
+using IA.Problemas;
 using IA.Problemas.Romenia;
 
 namespace IA
 {
-    class SolverRomenia
+    class SolverRomenia : ISolver
     {
-        static void solve()
+        void ISolver.solve()
         {
+            Console.Clear();
             DictionaryList<NomeCidadesEnum,Estado<NomeCidadesEnum>> mapa = new Mapa().GetMapa();
             
             Node<NomeCidadesEnum> estadoInicial = new Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.NEAMT));
             Node<NomeCidadesEnum> estadoFinal= new  Node<NomeCidadesEnum>(new Estado<NomeCidadesEnum>(NomeCidadesEnum.BUCHAREST));
 
-            Node<NomeCidadesEnum> resultado = DFS<NomeCidadesEnum>.solver(estadoInicial, estadoFinal, mapa);
+            Node<NomeCidadesEnum> resultado = DFSVisitados<NomeCidadesEnum>.solver(estadoInicial, estadoFinal, mapa);
             Stack<Node<NomeCidadesEnum>> caminho = new Stack<Node<NomeCidadesEnum>>();    
+            
             caminho.Push(resultado);
 
             while (resultado.pai != null)

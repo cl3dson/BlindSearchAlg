@@ -7,11 +7,13 @@
       <e p="Algoritmos" t="Include">
         <e p="BFS.cs" t="Include" />
         <e p="DFS.cs" t="Include" />
+        <e p="DFSVisitados.cs" t="Include" />
       </e>
       <e p="Base" t="Include">
         <e p="DictionaryList.cs" t="Include" />
         <e p="Estado.cs" t="Include" />
         <e p="FuncaoSucessora.cs" t="Include" />
+        <e p="FuncaoSucessoraVisitados.cs" t="Include" />
         <e p="Node.cs" t="Include" />
       </e>
       <e p="IA.csproj" t="IncludeRecursive" />
@@ -24,6 +26,7 @@
           <e p="VariacaoLimpeza.cs" t="Include" />
           <e p="VariacoesLimpezaEnum.cs" t="Include" />
         </e>
+        <e p="ISolver.cs" t="Include" />
         <e p="Romenia" t="Include">
           <e p="Mapa.cs" t="Include" />
           <e p="NomeCidadesEnum.cs" t="Include" />
